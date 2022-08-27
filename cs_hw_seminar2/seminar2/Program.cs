@@ -51,3 +51,43 @@
 //     Console.WriteLine($"{day} -> нет");
 // }
 
+// Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+
+// 1й способ
+
+// Console.Write("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// if (num < 0)
+// {
+//     num = num * -1;
+// }
+// if (num > 0 && num < 100)
+// {
+//     Console.WriteLine("третьей цифры нет");
+// }
+// else 
+// {
+//     while (num > 999)
+//     {
+//         num = num / 10;
+//     }
+//     int thirdNum = num % 10;
+//     Console.Write("Третья цифра: " + thirdNum);
+// }
+
+// 2й способ
+
+// Console.Write("Input random number: ");
+// int num = int.Parse(Console.ReadLine());
+
+// if(Math.Abs(num) < 100)
+// {
+//     Console.WriteLine("There is no third digit");
+// }
+// else{
+//     while (num >= 1000)
+//     {
+//         num = num / 10;
+//     }
+//     Console.WriteLine("Third digit is:" + Math.Abs(num%10));
+// }
